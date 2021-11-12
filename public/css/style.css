@@ -35,6 +35,16 @@
     background-color: cornsilk;
 }
 
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item a:hover {
+    color: orange;
+    transition: background-color 0.5s ease;
+}
+
 .menu-img {
     width: 100%;
 }

@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $json = file_get_contents(resource_path("data/foodie-rev.json"));
+    $data = json_decode($json);
+    dump($data);
+    return view('index', [
+        'menus' => $data
+    ]);
 });

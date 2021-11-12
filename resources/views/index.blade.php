@@ -18,78 +18,18 @@
     <div class="menu">
       <h2 class="menu-title">Daftar Menu</h2>
       <div class="menu-container">
-          <article class="menu-item">
-              <a href="">
-                  <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                  <div class="menu-detail">
-                      <h3 class="menu-name">Nasi Goreng</h3>
-                      <h4 class="menu-price">Rp15.000.000</h4>
-                  </div>
-              </a>
-          </article>
-          <article class="menu-item">
-              <a href="">
-                  <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                  <div class="menu-detail">
-                      <h3 class="menu-name">Nasi Goreng</h3>
-                      <h4 class="menu-price">Rp15.000.000</h4>
-                  </div>
-              </a>
-          </article>
+        @foreach($menus as $menu)
           <article class="menu-item">
             <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
+                <img class="menu-img" src="{{ $menu->picture_url }}" alt="{{ $menu->title }}">
                 <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
+                    <h3 class="menu-name">{{ $menu->title }}</h3>
+                    <h4 class="menu-price">Rp{{ $menu->base_price }}</h4>
                 </div>
             </a>
           </article>
-          <article class="menu-item">
-            <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
-                </div>
-            </a>
-          </article>
-          <article class="menu-item">
-            <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
-                </div>
-            </a>
-          </article>
-          <article class="menu-item">
-            <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
-                </div>
-            </a>
-          </article>
-          <article class="menu-item">
-            <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
-                </div>
-            </a>
-          </article>
-          <article class="menu-item">
-            <a href="">
-                <img class="menu-img" src="https://lorempixel.com/300/200/food/1" alt="Nasi goreng">
-                <div class="menu-detail">
-                    <h3 class="menu-name">Nasi Goreng</h3>
-                    <h4 class="menu-price">Rp15.000.000</h4>
-                </div>
-            </a>
-          </article>
+        @endforeach
+
       </div>
     </div>
 </body>
