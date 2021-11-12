@@ -20,3 +20,16 @@ Route::get('/', function () {
         'menus' => $data
     ]);
 });
+
+Route::get('detail/{id}', function($id) {
+    $json = file_get_contents(resource_path("data/foodie-rev.json"));
+    $data = json_decode($json);
+    foreach($data as $menu) {
+        if($menu->id == $id){
+            return view('detail', [
+                'menu' => $menu
+            ]);
+        };
+    };
+
+});

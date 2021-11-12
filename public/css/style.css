@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap");
 
 * {
     margin: 0;
@@ -62,7 +63,8 @@
 .menu-img:hover {
     scale: 1.1;
 }
-.menu-detail {
+
+.menu-text {
     margin-top: 1rem;
 }
 
@@ -73,4 +75,44 @@
 .menu-price {
     text-align: right;
     padding-bottom: 0.5rem;
+}
+
+.menu-detail {
+    width: 540px;
+    margin: 4rem auto 3rem auto;
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid #362417;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+
+.menu-description {
+    margin: 2rem 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.menu-categories {
+    margin-top: 1rem;
+    font-weight: 300;
+    color: #362417;
+}
+
+.back-menu {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 10rem;
+    color: #fff;
+    background-color: #362417;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    font-size: larger;
+    margin-bottom: 3rem;
+}
+
+.back-menu:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
