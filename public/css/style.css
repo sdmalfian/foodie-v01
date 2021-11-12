@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+.title-text {
+    margin-left: 1rem;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-title {
+    margin-bottom: 3rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 25px;
+}
+
+.menu-item {
+    padding: 1.2rem;
+    background-color: cornsilk;
+}
+
+.menu-img {
+    width: 100%;
+}
+
+.menu-detail {
+    margin-top: 1rem;
+}
+
+.menu-name {
+    padding-bottom: 1rem;
+}
+
+.menu-price {
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
