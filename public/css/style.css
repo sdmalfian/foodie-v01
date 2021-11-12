@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
     display: flex;
     margin: 3rem auto;
     justify-content: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 .title-text {
@@ -17,6 +20,9 @@
 .menu {
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
 }
 
 .menu-title {
@@ -32,23 +38,30 @@
 
 .menu-item {
     padding: 1.2rem;
-    background-color: cornsilk;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .menu-item a {
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 }
 
 .menu-item a:hover {
-    color: orange;
-    transition: background-color 0.5s ease;
+    color: orangered;
 }
 
 .menu-img {
     width: 100%;
+    transition: 350ms ease-in-out;
 }
 
+.menu-img:hover {
+    scale: 1.1;
+}
 .menu-detail {
     margin-top: 1rem;
 }
