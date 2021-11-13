@@ -17,6 +17,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 This is my repository as a submission for YDS Fullstack Class. The view isn't responsive yet.
 
 ## How to run
+(Make sure you have php, php composer, and laravel installed before)
 1. Clone/download this repo
 2. Locate the repo folder
-3. Enter command "php artisan serve" in your terminal
+3. Run "composer install" to generate depedencies in vendor folder
+4. Change .env.example to .env
+5. Run "php artisan key:generate"
+6. Run "php artisan serve"
