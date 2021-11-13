@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Menu;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,22 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $json = file_get_contents(resource_path("data/foodie-rev.json"));
-    $data = json_decode($json);
+    $data = Menu::getMenu();
     return view('index', [
         'menus' => $data
     ]);
 });
 
 Route::get('detail/{id}', function($id) {
-    $json = file_get_contents(resource_path("data/foodie-rev.json"));
-    $data = json_decode($json);
-    foreach($data as $menu) {
-        if($menu->id == $id){
-            return view('detail', [
-                'menu' => $menu
-            ]);
-        };
-    };
-
+    $menu = Menu::getMenuDetail($id);
+    return view('detail', [
+        'menu' => $menu
+    ]);
 });

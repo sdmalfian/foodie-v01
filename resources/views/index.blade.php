@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="title">
-    <img src="https://lorempixel.com/300/200/food/1" width="70" alt="Foodie image">
+    <img id="logo" src="{{ url('/icon/icon-512x512.png')}}" width="74" alt="Foodie Logo">
     <div class="title-text">
         <h1 id="title">Foodie 0.1</h1>
         <h2>Teman setia perut kelaparan</h2>

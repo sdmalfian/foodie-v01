@@ -1,6 +1,8 @@
-@extends('layout')
+<x-main>
+    <x-slot name="menu">
+       {{ $menu->title }} Foodie
+    </x-slot>
 
-@section('content')
     <article class="menu-detail">
         <img class="menu-img" src="{{ $menu->picture_url }}" alt="{{ $menu->title }}">
         <div class="menu-text">
@@ -10,6 +12,6 @@
         </div>
         <hr>
         <h4 class="menu-categories">Kategori: {{ implode(", ",$menu->categories) }}</h4>
-  </article>
-  <a class="back-menu" href="/">Back to menu</a>
-@endsection
+    </article>
+    <a class="back-menu" href="/">Back to menu</a>
+</x-main>
